@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://audio/punch.wav" type="AudioStream" id=1]
+[ext_resource path="res://audio/jump.wav" type="AudioStream" id=2]
+[ext_resource path="res://audio/song.mp3" type="AudioStream" id=3]
+
+[node name="Sounds" type="Node2D"]
+
+[node name="hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -5.0
+
+[node name="jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="song" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.0
+autoplay = true
